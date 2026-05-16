@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="soumyasanshi.BaseCommonTest.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Submit Order Test(failed)" verbose="0">
+    <classes>
+      <class name="soumyasanshi.SeleniumFrameWorkDesign.StandAloneTest">
+        <methods>
+          <include name="submitOrder" invocation-numbers="0 1"/>
+          <include name="testOrderProducts"/>
+          <include name="lauchApplication"/>
+          <include name="EndApp"/>
+        </methods>
+      </class> <!-- soumyasanshi.SeleniumFrameWorkDesign.StandAloneTest -->
+    </classes>
+  </test> <!-- Submit Order Test(failed) -->
+  <test thread-count="5" name="Error Validation Test(failed)" verbose="0">
+    <classes>
+      <class name="soumyasanshi.SeleniumFrameWorkDesign.ErrorValidations">
+        <methods>
+          <include name="lauchApplication"/>
+          <include name="LoginErrorValidation"/>
+          <include name="EndApp"/>
+        </methods>
+      </class> <!-- soumyasanshi.SeleniumFrameWorkDesign.ErrorValidations -->
+    </classes>
+  </test> <!-- Error Validation Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
