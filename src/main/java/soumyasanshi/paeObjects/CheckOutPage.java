@@ -3,6 +3,7 @@ package soumyasanshi.paeObjects;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -26,6 +27,7 @@ public class CheckOutPage extends AbstractComponents{
 	WebElement selectCountry;
 	
 	By wait=By.cssSelector("section[class*='ta-results']");
+	By wait2=By.cssSelector("a[class*='btnn']");
 	
 	@FindBy(css="button[class*='list-group']")
 	List<WebElement> contriesList;
@@ -49,6 +51,7 @@ public class CheckOutPage extends AbstractComponents{
 	}
 	
 	public ConfirmationPage  placeOrder(){
+		ExWaitvisible(wait2);
 		placeOrder.click();
 		ConfirmationPage cp=new ConfirmationPage(driver);
 		return cp;

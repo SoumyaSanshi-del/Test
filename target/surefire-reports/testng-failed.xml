@@ -4,18 +4,6 @@
   <listeners>
     <listener class-name="soumyasanshi.BaseCommonTest.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Submit Order Test(failed)" verbose="0">
-    <classes>
-      <class name="soumyasanshi.SeleniumFrameWorkDesign.StandAloneTest">
-        <methods>
-          <include name="submitOrder" invocation-numbers="0 1"/>
-          <include name="testOrderProducts"/>
-          <include name="lauchApplication"/>
-          <include name="EndApp"/>
-        </methods>
-      </class> <!-- soumyasanshi.SeleniumFrameWorkDesign.StandAloneTest -->
-    </classes>
-  </test> <!-- Submit Order Test(failed) -->
   <test thread-count="5" name="Error Validation Test(failed)" verbose="0">
     <classes>
       <class name="soumyasanshi.SeleniumFrameWorkDesign.ErrorValidations">
