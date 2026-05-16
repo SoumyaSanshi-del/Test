@@ -40,6 +40,7 @@ public class LandingPage extends AbstractComponents{
 	
 	public void goTo() {
 		driver.get("https://rahulshettyacademy.com/client/");
+		driver.manage().window().maximize();
 	}
 	
 	public String getErrorMessage() {
